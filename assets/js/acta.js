@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <form id="formActa">
         <section class="mb-5">
           <h2 class="text-primary mb-3">Datos de Entrega</h2>
+          <!-- (TIPO: PC, Monitor, Notebook, Tablet, Mac, Impresora, DataShow, Teléfono IP y Tablet) -->
+          <p>TIPO: PC, Monitor, Notebook, Tablet, Mac, Impresora, DataShow, Teléfono IP y Tablet</p>
           <div class="row g-3">
             <div class="col-md-4">
               <label for="nombreUsuario" class="form-label">Nombre Usuario</label>
@@ -40,7 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
         <section class="mb-5">
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="text-primary mb-0">Equipamiento Computacional</h2>
+          
+            <h2 class="text-primary mb-0 mb-3">Equipamiento Computacional</h2>
+            
             <button type="button" class="btn btn-success" onclick="agregarFilaEquipamiento()">
               ➕ Agregar Equipo
             </button>
@@ -95,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </thead>
               <tbody id="tbodyPerifericos">
                 <!-- Las filas se agregarán dinámicamente -->
+                <p>TIPO: PC, Monitor, Notebook, Tablet, Mac, Impresora, DataShow, Teléfono IP y Tablet</p>
               </tbody>
             </table>
           </div>
