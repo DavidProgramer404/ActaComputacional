@@ -1,0 +1,309 @@
+table {
+  background: white;
+}
+
+table th {
+  background-color: #0d6efd; /* azul Bootstrap */
+  color: white;
+  white-space: nowrap;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+table input.form-control {
+  border: 1px solid #dee2e6;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+table input.form-control:focus {
+  border-color: #0d39fd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 57, 253, 0.25);
+}
+
+.campo-equipamiento,
+.campo-periferico {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  min-height: 42px;
+}
+
+#tablaEquipamiento th,
+#tablaPerifericos th {
+  padding: 1rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+#tablaEquipamiento td,
+#tablaPerifericos td {
+  padding: 0.75rem;
+}
+
+@media print {
+  .btn, button {
+    display: none !important;
+  }
+  
+  table input.form-control {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+  
+  header, footer {
+    position: fixed;
+    width: 100%;
+  }
+  
+  header {
+    top: 0;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+header {
+  min-height: 100px;
+}
+
+.headerColor {
+  background-color: #182974;
+}
+
+/* Mejoras para las tablas de equipamiento */
+#tablaEquipamiento,
+#tablaPerifericos {
+  font-size: 0.95rem;
+}
+
+#tablaEquipamiento .table-responsive,
+#tablaPerifericos .table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Asegurar que los inputs sean visibles y cómodos */
+#tablaEquipamiento input[type="text"],
+#tablaEquipamiento input[type="number"],
+#tablaEquipamiento input[type="date"],
+#tablaPerifericos input[type="text"],
+#tablaPerifericos input[type="date"] {
+  width: 100%;
+  min-width: 100px;
+}
+
+/* Mejorar el espaciado de las secciones */
+section.mb-5 {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 2rem !important;
+}
+
+/* Estilos para modo impresión */
+.modo-impresion .acta-impresion {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.seccion-impresion {
+  page-break-inside: avoid;
+  margin-bottom: 2rem;
+}
+
+.titulo-seccion {
+  color: #182974;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #182974;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tabla-impresion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.tabla-impresion td,
+.tabla-impresion th {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabla-impresion th {
+  background-color: #182974;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.tabla-impresion tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.label-impresion {
+  background-color: #e9ecef;
+  font-weight: 600;
+  width: 20%;
+  min-width: 150px;
+}
+
+.numero-fila {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  width: 40px;
+}
+
+.sin-datos {
+  font-style: italic;
+  color: #6c757d;
+  padding: 1rem;
+  text-align: center;
+}
+
+.condiciones-lista ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.condiciones-lista li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.condiciones-lista li:before {
+  content: "•";
+  color: #182974;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+.firmas-impresion {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #dee2e6;
+}
+
+.linea-firma {
+  border-bottom: 2px solid #333;
+  width: 80%;
+  margin: 2rem auto 0.5rem;
+  height: 60px;
+}
+
+.texto-firma {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.nombre-firma {
+  font-size: 0.9rem;
+  color: #495057;
+  margin-top: 0.25rem;
+}
+
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: A4;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .logo {
+    height: 60px;
+  }
+  
+  section.mb-5 {
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+
+  .acta-impresion {
+    width: 100%;
+  }
+
+  .seccion-impresion {
+    page-break-inside: avoid;
+    margin-bottom: 1.5rem;
+  }
+
+  .tabla-equipamiento,
+  .tabla-perifericos {
+    font-size: 0.75rem;
+  }
+
+  .tabla-equipamiento th,
+  .tabla-perifericos th {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.7rem;
+  }
+
+  .tabla-equipamiento td,
+  .tabla-perifericos td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.7rem;
+  }
+
+  .titulo-seccion {
+    font-size: 1.1rem;
+    page-break-after: avoid;
+  }
+
+  .firmas-impresion {
+    page-break-inside: avoid;
+    margin-top: 2rem;
+  }
+
+  header {
+    position: relative;
+    page-break-after: avoid;
+  }
+
+  footer {
+    position: relative;
+    page-break-before: avoid;
+  }
+
+  main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .btn, button {
+    display: none !important;
+  }
+}
